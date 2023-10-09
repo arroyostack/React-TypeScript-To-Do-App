@@ -5,7 +5,7 @@
 ## Todo App using React Typescript
 ### Context, ContextProvider, useReducer
 
-In this exercise i am learning on how to build a solid application using React and taking advantage of the superset Typescript.
+In this exercise I am learning on how to build a robust Todo application using React and taking advantage of the superset Typescript.
 
 The app uses Context useReducer to manage state in the application.
 
