@@ -1,5 +1,9 @@
 import { ToDoContext } from "./ToDoContext";
 import { TodoState } from "../interfaces/interfaces";
+import { useReducer } from "react";
+import { todoReducers } from "./todoReducers";
+
+
 const INITIAL_STATE: TodoState = {
     todoCount: 2,
     todos: [
@@ -24,8 +28,12 @@ interface toDoProviderProps {
 }
 
 export const ToDoProvider = ( { children }: toDoProviderProps ) => {
+    const [ todoState, dispatch ] = useReducer( todoReducers, INITIAL_STATE );
+
     return (
-        <ToDoContext.Provider value={ {} }>
+        <ToDoContext.Provider value={ {
+            todoState
+        } }>
             { children }
         </ToDoContext.Provider>
     );
