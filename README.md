@@ -9,5 +9,7 @@ In this exercise I am learning on how to build a robust Todo application using R
 
 The app uses Context useReducer to manage state in the application.
 
+The app will not include user input but only functionality of reducer and context provider.
+
 This exercise was brought by <a>Fernando Herrera</a> a great mentor focus on CleanCode, Solid Principles and best practices.
 
